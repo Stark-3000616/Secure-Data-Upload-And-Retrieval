@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Signup</title> 
+        <link rel="stylesheet" href="./css/login.css" >
+    </head>
+
+    <body>
+        <div class="nav">
+            <ul>
+                <li style="float:left;color: white; font-size: 35px;padding: 20px 45px;font-family: 'Noto Sans','sans-serif';cursor: pointer;">
+                    <span style="color: red;">SAFE</span><span style="color: #1f8bb2;">UPLOAD</span>
+                </li>
+
+                <li style="float:right"><a href="./home.html">Home</a></li>
+            </ul>
+        </div>
+        <form method="get" action="#" id="signup-form">
+            <div id="form-container-signup">
+                <div id="header-container">
+                    <header>SIGNUP</header>
+                </div>
+                <div id="body-container">
+                    <input type="text" class="displayBlock" id="inputName" name="name" placeholder="Name" autocomplete="off" required />
+                    <input type="text" class="displayBlock" id="inputUsername"name="email" placeholder="Email Id" autocomplete="off" required /> 
+                    <input type="password" class="displayBlock" id="inputPassword" name="password" placeholder="Password" autocomplete="off" required />
+                    <input type="password" class="displayBlock" id="inputConfirmPassword" name="confirmpassword" placeholder="Confirm Password" autocomplete="off" required />
+                    <input type="number" class="displayBlock" id="inputContact" name="contact" placeholder="Contact" autocomplete="off" required />
+                    <button type="submit"  id="submitButton">Submit</button> 
+                    <button type="reset" id="resetButton">Cancel</button>
+                </div>
+
+                <div id="after-body-container">
+                    <br>
+                    <p>Already have an account? Log in <a href="./login.html">here</a></p>
+                </div>
+                <div id="error">
+                    
+                 </div>
+            </div>
+        </form>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    background-image: url('../img/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+  background: #111;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2px;
+  overflow: hidden;
+  background-color: black;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 45px;
+  font-size: 19px;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: "Noto Sans", "sans-serif";
+  border: 0px;
+}
+
+li a:hover {
+  background-color: #1f8bb2;
+}
+
+.file-download{
+    display: flex;
+    height: 800px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    appearance: button;
+    background-color: #1f8bb2;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 34px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 10px 10px 10px;
+    text-align: center;
+    padding: 12px 50px;
+    font-size: 16px;
+  
+  }
+  
+  button:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+  }
+  
+  button:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+  }
+
+  .file-download-input > input{
+    width: 300px;
+    height: 30px;
+  }
+
+  .file-download-button{
+    margin-top: 10px;
+  }
+
+footer{
+    height: 100px; 
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    margin-bottom: 0%;
+}
+
+.contact-us-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .info{
+    margin-left: 10%;
+    line-height: 1.3rem;
+  }

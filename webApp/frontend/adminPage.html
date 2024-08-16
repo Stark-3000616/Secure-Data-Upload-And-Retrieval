@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/adminPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Admin Page</title>
+</head>
+<body>
+  <div class="nav">
+    <ul>
+        <li style="float:left;color: white; font-size: 35px;padding: 20px 45px;font-family: 'Noto Sans','sans-serif';cursor: pointer;">
+            <span style="color: red;">SAFE</span><span style="color: #1f8bb2;">UPLOAD</span>
+        </li>
+
+        <li style="float:right"><a href="./home.html">Logout</a></li>
+    </ul>
+</div>
+    <div class="main-container">
+      <br><br><br>
+        <form class="file-upload" id="file-upload" name="uploadfile" class="uploadfile" method="POST">
+            <h1 style="color:white;">UPLOAD FILE</h1>
+                  <div class="file-download-input" style="display: flex; justify-content: center; align-items: center; margin-left: 70px;">
+                    <input type="file" name="file" id="file" style="color:white; font-weight: 800; font-size: 15px;"/>
+                  </div> <br>
+                  <div class="file-download-button">
+                    <button type="submit" id="submit" name="submit" class="btn">Submit</button><br><br>
+                  </div>
+                  <div id="upload-status" style="color: white; font-size:20px">
+                  </div>
+          </form>
+<br><br><br>
+          <form class="file-download" id="downloadfile" method="POST">
+              <h1 style="color:white;">DOWNLOAD FILE</h1> <br>
+              <div class="file-download-input">
+                  <input type="text" name="str" id="str">
+              </div> <br>
+              <div class="file-download-button">
+                  <button type="submit" id="download" name="download" class="btn">Download</button>
+              </div>
+              <div id="div-status" style="color: white; font-size:20px">
+              </div>
+          </form>
+          <br><br><br><br><br><br>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center;">
+      <form id="view" name="view" class="view" method="GET">
+        <button type="submit" id="view" name="view" class="btn">View Files</button>
+      </form>
+    </div>
+  <div id="show-table">
+    <p id="tp" style="color: white; font-size:20px"></p>
+    <table border="5" cellspacing="2" cellpadding="10" id="table" style="border-collapse: collapse; color: white; " ></table>
+  </div>
+    <footer>
+      <p> Copyright © 2022 All rights reserved</p>
+       </div>
+       
+  
+   </footer>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   <script src="./js/script.js"></script>
+</body>
+</html>
